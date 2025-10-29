@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Navigation Hub - Modern Mantras IAS Academy</title>
+    <meta name="description" content="Navigate seamlessly through Modern Mantras IAS Academy's comprehensive coaching programs and success stories with our intuitive header navigation system.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-background text-text-primary font-body">
+    <!-- Sticky Header Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-secondary/20 transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10 lg:h-12 lg:w-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" fill="#d4af37" opacity="0.1"/>
+                            <path d="M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z" fill="#d4af37"/>
+                            <circle cx="24" cy="24" r="2" fill="#d4af37"/>
+                        </svg>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-display text-xl lg:text-2xl font-bold text-text-primary">
+                            Modern <span class="text-accent">Mantras</span>
+                        </h1>
+                        <p class="text-xs lg:text-sm text-text-secondary font-medium">IAS Academy</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="hero_landing_zone.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="why_modern_mantras.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Why Us
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <!-- 'Our Toppers' removed from navigation as requested -->
+                    <a href="course_portfolio.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Courses
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-colors duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="testimonials.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Testimonials
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-colors duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                        Enroll Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-text-primary hover:text-accent focus:outline-none focus:text-accent transition-colors duration-300" aria-label="Toggle mobile menu">
+                        <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-secondary/95 backdrop-blur-sm rounded-lg mt-2 border border-surface/20">
+                    <a href="hero_landing_zone.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                            </svg>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="why_modern_mantras.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Why Modern Mantras</span>
+                        </div>
+                    </a>
+                    <!-- Our Toppers link removed from mobile menu -->
+                    <a href="course_portfolio.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            <span>Courses</span>
+                        </div>
+                    </a>
+                    <a href="testimonials.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            <span>Testimonials</span>
+                        </div>
+                    </a>
+                    <div class="px-3 py-3">
+                        <a href="contact_enrollment_hub.html" class="block w-full text-center bg-accent text-primary font-semibold px-4 py-3 rounded-lg transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                            Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-20 lg:pt-24">
+        <!-- (Toppers section removed as requested) -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary border-t border-secondary/20 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-text-secondary">
+                © 2025 Modern Mantras IAS Academy. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Navigation Functionality -->
+    <!-- Include global theme & utility script (provides universalSmoothScrollTo, theme toggle, etc.) -->
+    <script src="../js/theme-system.js"></script>
+    <script>
+        // Defensive handler: convert inline universalSmoothScrollTo(...) onclicks to safe event listeners
+        (function(){
+            function bindScrollLinks() {
+                const anchors = document.querySelectorAll('a[onclick*="universalSmoothScrollTo"]');
+                anchors.forEach(a => {
+                    try {
+                        // Preserve href if present
+                        const href = a.getAttribute('href');
+                        a.addEventListener('click', function(evt){
+                            evt.preventDefault();
+                            // Extract first argument if present (we expect 'toppers')
+                            const targetId = 'toppers';
+                            if (typeof window.universalSmoothScrollTo === 'function') {
+                                window.universalSmoothScrollTo(targetId);
+                            } else {
+                                // Fallback: native scrollIntoView
+                                const el = document.getElementById(targetId);
+                                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        });
+                        // Remove inline onclick to avoid double-calls
+                        a.removeAttribute('onclick');
+                        // Re-assign href to javascript:void(0) to avoid navigation if needed
+                        if (!href || href.startsWith('javascript:')) a.setAttribute('href', 'javascript:void(0)');
+                    } catch (e) {
+                        console.warn('bindScrollLinks error', e);
+                    }
+                });
+            }
+
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bindScrollLinks);
+            else bindScrollLinks();
+        })();
+    </script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        
+        // Note: smooth scrolling is handled by universalSmoothScrollTo (defined in js/theme-system.js)
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuButton.addEventListener('click', function() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('animate-fade-in');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('animate-fade-in');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // No inline scroll function here — use universalSmoothScrollTo when needed
+
+        // Header background opacity on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            const scrolled = window.pageYOffset;
+            
+            if (scrolled > 50) {
+                header.classList.add('bg-primary/98');
+                header.classList.remove('bg-primary/95');
+            } else {
+                header.classList.add('bg-primary/95');
+                header.classList.remove('bg-primary/98');
+            }
+        });
+
+        // Active navigation highlighting
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        function highlightActiveNav() {
+            const scrollPos = window.pageYOffset + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-accent');
+                        link.classList.add('text-text-primary');
+                        const underline = link.querySelector('span');
+                        if (underline) {
+                            underline.classList.remove('w-full');
+                            underline.classList.add('w-0');
+                        }
+                    });
+                    
+                    const activeLink = document.querySelector(`a[onclick*="${sectionId}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('text-accent');
+                        activeLink.classList.remove('text-text-primary');
+                        const underline = activeLink.querySelector('span');
+                        if (underline) {
+                            underline.classList.add('w-full');
+                            underline.classList.remove('w-0');
+                        }
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightActiveNav);
+        window.addEventListener('load', highlightActiveNav);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

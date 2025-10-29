@@ -1,0 +1,591 @@
+/* Universal Theme System - Modern Mantras IAS Academy */
+
+/* Base Theme Variables */
+:root {
+  /* Dark Mode (Default) */
+  --color-primary: #1a202c;
+  --color-secondary: #2d3748;
+  --color-accent: #d4af37;
+  --color-background: #0f1419;
+  --color-surface: #374151;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #cbd5e0;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-border: rgba(212, 175, 55, 0.2);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Light Mode */
+:root.light-mode {
+  --color-primary: #ffffff;
+  --color-secondary: #f3f4f6;
+  --color-accent: #d4af37;
+  --color-background: #f9fafb;
+  --color-surface: #ffffff;
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-border: rgba(212, 175, 55, 0.3);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Transitions for All Elements */
+* {
+  transition: background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Body Styling with Gradient Background */
+body {
+  background: linear-gradient(180deg, var(--color-background) 0%, var(--color-primary) 100%);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root.light-mode body {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 50%, #e5e7eb 100%);
+  transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Professional Theme Toggle Button */
+.theme-toggle {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 32px;
+  border: 2px solid var(--color-accent);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 8px var(--color-shadow), inset 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.5), inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  border-color: #fbbf24;
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Actionable toggle feedback (temporary) */
+.theme-toggle.toggle-active {
+  transform: scale(0.96);
+  box-shadow: 0 10px 30px rgba(212,175,55,0.28), 0 2px 8px rgba(0,0,0,0.12) !important;
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(212,175,55,0.12), 0 6px 20px rgba(212,175,55,0.18);
+}
+
+.theme-toggle-slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  border-radius: 50%;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+              background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.6);
+  transform: translateX(0);
+  will-change: transform;
+}
+
+/* Make the slider more responsive to quick toggles */
+.theme-toggle.toggle-active .theme-toggle-slider {
+  transition-duration: 0.28s !important;
+  transform: translateX(32px) scale(1.03);
+}
+
+/* Light Mode Slider - Moves to Right with Smooth Bounce */
+:root.light-mode .theme-toggle {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+:root.light-mode .theme-toggle-slider {
+  transform: translateX(32px);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.8);
+}
+
+/* Icon Styling */
+.theme-icon {
+  width: 14px;
+  height: 14px;
+  color: #1e293b;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 0 2px rgba(30, 41, 59, 0.5));
+}
+
+.theme-icon.hidden {
+  opacity: 0;
+  transform: scale(0.3) rotate(180deg);
+  position: absolute;
+}
+
+.theme-icon:not(.hidden) {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+:root.light-mode .theme-icon {
+  color: #1e293b;
+  filter: drop-shadow(0 0 2px rgba(30, 41, 59, 0.3));
+}
+
+/* Enhanced Card Styling */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 12px var(--color-shadow);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px var(--color-shadow);
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+
+/* Enhanced Light Mode Card Styling */
+:root.light-mode .card {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+:root.light-mode .card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(212, 175, 55, 0.3);
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-accent) 0%, #b8962e 100%);
+  color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Navigation Styling */
+#main-header {
+  background: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(12px);
+}
+
+/* Mobile Menu Enhancements */
+#mobile-menu {
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 24px var(--color-shadow);
+}
+
+/* Light Mode Specific Enhancements */
+:root.light-mode #main-header {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Enhanced Text Visibility in Light Mode */
+:root.light-mode .text-text-primary {
+  color: #1a202c !important;
+  font-weight: 500;
+}
+
+:root.light-mode .text-text-secondary {
+  color: #4a5568 !important;
+}
+
+:root.light-mode .text-accent {
+  color: #b8962e !important;
+  font-weight: 600;
+}
+
+/* Enhanced Sections in Light Mode */
+:root.light-mode section {
+  background: transparent;
+}
+
+:root.light-mode .bg-primary,
+:root.light-mode .bg-background {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%) !important;
+}
+
+:root.light-mode .bg-secondary {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important;
+}
+
+:root.light-mode .bg-background {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 50%, #e5e7eb 100%) !important;
+}
+
+/* Accent Colors in Light Mode */
+:root.light-mode .text-accent {
+  color: #b8962e !important;
+}
+
+:root.light-mode .bg-accent {
+  background-color: #d4af37 !important;
+}
+
+/* Surface Colors */
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+/* Text Colors */
+.text-text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+/* Border Colors */
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 640px) {
+  .theme-toggle {
+    width: 56px;
+    height: 28px;
+  }
+  
+  .theme-toggle-slider {
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+                background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  :root.light-mode .theme-toggle-slider {
+    transform: translateX(28px);
+  }
+  
+  .theme-icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Additional Light Mode Beautification */
+:root.light-mode {
+  /* Lighter, more vibrant colors for light mode */
+  --color-primary: #ffffff;
+  --color-secondary: #f8fafc;
+  --color-surface: #ffffff;
+  --color-background: #f9fafb;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-border: rgba(212, 175, 55, 0.3);
+  --color-shadow: rgba(100, 116, 139, 0.15);
+}
+
+/* Beautiful Light Mode Buttons */
+:root.light-mode .btn-primary {
+  background: linear-gradient(135deg, #d4af37 0%, #f59e0b 100%);
+  color: #1a202c;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+:root.light-mode .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Light Mode Navigation Links */
+:root.light-mode .nav-link {
+  color: #1a202c;
+}
+
+:root.light-mode .nav-link:hover {
+  color: #b8962e;
+}
+
+/* Light Mode Mobile Menu */
+:root.light-mode #mobile-menu {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Light Mode Accent Elements */
+:root.light-mode .text-accent {
+  color: #b8962e !important;
+  text-shadow: 0 1px 2px rgba(184, 150, 46, 0.2);
+}
+
+:root.light-mode .bg-accent {
+  background-color: #d4af37 !important;
+}
+
+/* Enhanced Light Mode Borders */
+:root.light-mode .border-secondary {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+/* Light Mode Input Fields */
+:root.light-mode input,
+:root.light-mode textarea,
+:root.light-mode select {
+  background: #ffffff;
+  color: #1a202c;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+:root.light-mode input:focus,
+:root.light-mode textarea:focus,
+:root.light-mode select:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8962e;
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Professional Focus States */
+*:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Focus style for section anchors when script focuses them */
+section:focus {
+  outline: 3px solid rgba(212,175,55,0.18);
+  outline-offset: 6px;
+  transition: outline 0.3s ease;
+}
+
+/* Enhanced Link Hover */
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Print Styles */
+@media print {
+  .theme-toggle,
+  #mobile-menu-button {
+    display: none;
+  }
+}
+
+/* ===============================================
+   ENHANCED LIGHT MODE STYLING - More Attractive
+   =============================================== */
+
+/* Beautiful Light Mode Headers */
+:root.light-mode h1,
+:root.light-mode h2,
+:root.light-mode h3,
+:root.light-mode h4,
+:root.light-mode h5,
+:root.light-mode h6 {
+  color: #1a202c;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Enhanced Buttons in Light Mode */
+:root.light-mode .btn-primary,
+:root.light-mode button[class*="btn"] {
+  background: linear-gradient(135deg, #d4af37 0%, #b8962e 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.4);
+  border: none;
+  font-weight: 600;
+}
+
+:root.light-mode .btn-primary:hover,
+:root.light-mode button[class*="btn"]:hover {
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #fbbf24 0%, #d4af37 100%);
+}
+
+/* Beautiful Link Styling in Light Mode */
+:root.light-mode a {
+  color: #b8962e;
+  transition: color 0.3s ease;
+}
+
+:root.light-mode a:hover {
+  color: #d4af37;
+}
+
+:root.light-mode .nav-link {
+  color: #1a202c;
+  font-weight: 500;
+}
+
+:root.light-mode .nav-link:hover {
+  color: #d4af37;
+}
+
+/* Enhanced Footer in Light Mode */
+:root.light-mode footer {
+  background: linear-gradient(180deg, #f9fafb 0%, #e5e7eb 100%);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  color: #4a5568;
+}
+
+/* Beautiful Shadow Effects in Light Mode */
+:root.light-mode .shadow,
+:root.light-mode .shadow-lg {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Input Fields in Light Mode */
+:root.light-mode input,
+:root.light-mode textarea,
+:root.light-mode select {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  color: #1a202c;
+}
+
+:root.light-mode input::placeholder,
+:root.light-mode textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Mobile Menu Light Mode */
+:root.light-mode #mobile-menu {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Course Cards & Testimonials Light Mode */
+:root.light-mode .course-card,
+:root.light-mode .testimonial-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+:root.light-mode .course-card:hover,
+:root.light-mode .testimonial-card:hover {
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-4px);
+}
+
+/* Beautiful Accent Borders in Light Mode */
+:root.light-mode .border-accent,
+:root.light-mode [class*="border-accent"] {
+  border-color: rgba(212, 175, 55, 0.4) !important;
+}
+
+/* Stats/Numbers Highlight in Light Mode */
+:root.light-mode .stat-number,
+:root.light-mode .highlight-number {
+  color: #d4af37;
+  text-shadow: 0 2px 4px rgba(212, 175, 55, 0.2);
+}
+
+/* Icon Colors in Light Mode */
+:root.light-mode svg path[fill="#d4af37"],
+:root.light-mode .icon-accent {
+  fill: #d4af37;
+  filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
+}
+
+/* Success/Error Messages Light Mode */
+:root.light-mode .success,
+:root.light-mode .alert-success {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+:root.light-mode .error,
+:root.light-mode .alert-error {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* Loader/Spinner Light Mode */
+:root.light-mode .spinner,
+:root.light-mode .loader {
+  border-color: rgba(212, 175, 55, 0.2);
+  border-top-color: #d4af37;
+}
+

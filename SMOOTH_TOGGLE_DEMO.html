@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙☀️ Smooth Theme Toggle Demo - Modern Mantras</title>
+    <link rel="stylesheet" href="css/theme-system.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .demo-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .demo-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--color-text-primary);
+        }
+        
+        .demo-subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 30px;
+        }
+        
+        .toggle-showcase {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            background: var(--color-surface);
+            padding: 60px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px var(--color-shadow);
+            border: 2px solid var(--color-border);
+        }
+        
+        .toggle-label {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 20px;
+        }
+        
+        .current-theme {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--color-accent) 0%, #b8962e 100%);
+            color: #1a202c;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .feature-card {
+            background: var(--color-surface);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid var(--color-border);
+            box-shadow: 0 8px 24px var(--color-shadow);
+            transition: all 0.4s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 36px var(--color-shadow);
+            border-color: var(--color-accent);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 10px;
+        }
+        
+        .feature-desc {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+        
+        .instructions {
+            margin-top: 60px;
+            text-align: center;
+            max-width: 700px;
+            padding: 40px;
+            background: var(--color-surface);
+            border-radius: 16px;
+            border: 2px solid var(--color-accent);
+        }
+        
+        .instructions h3 {
+            color: var(--color-accent);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .instructions p {
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .demo-title {
+                font-size: 2rem;
+            }
+            
+            .toggle-showcase {
+                padding: 40px 20px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1 class="demo-title">🌙 Smooth Theme Toggle ☀️</h1>
+            <p class="demo-subtitle">Modern Mantras IAS Academy</p>
+        </div>
+        
+        <div class="toggle-showcase">
+            <p class="toggle-label">Click to toggle between Dark & Light modes</p>
+            
+            <!-- Desktop Toggle -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" style="transform: scale(1.5);">
+                <div class="theme-toggle-slider">
+                    <svg class="theme-icon" id="moon-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg class="theme-icon hidden" id="sun-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </button>
+            
+            <span class="current-theme" id="current-theme">🌙 Dark Mode</span>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Ultra Smooth</h3>
+                <p class="feature-desc">0.7s cubic-bezier animation with bounce effect for buttery-smooth transitions</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3 class="feature-title">Bidirectional</h3>
+                <p class="feature-desc">Smoothly switches back and forth between dark and light modes with perfect animations</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💾</div>
+                <h3 class="feature-title">Persistent</h3>
+                <p class="feature-desc">Your theme choice is saved in localStorage and loads instantly on page refresh</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Beautiful</h3>
+                <p class="feature-desc">Attractive light mode with gradient backgrounds, soft shadows, and vibrant colors</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Responsive</h3>
+                <p class="feature-desc">Works perfectly on desktop, tablet, and mobile devices with optimized button sizes</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Universal</h3>
+                <p class="feature-desc">One toggle affects ALL pages simultaneously - consistent experience throughout</p>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>✨ How It Works</h3>
+            <p>
+                <strong>1. Click the toggle button above</strong><br>
+                Watch the smooth animation as the slider glides to the other side with a delightful bounce effect!
+                <br><br>
+                <strong>2. See instant changes</strong><br>
+                The entire page transforms with smooth 0.7s transitions - background, text, cards, everything!
+                <br><br>
+                <strong>3. Navigate to any page</strong><br>
+                Your theme choice follows you across all pages and persists even after closing the browser!
+            </p>
+        </div>
+    </div>
+    
+    <script src="js/theme-system.js"></script>
+    <script>
+        // Update current theme label
+        function updateThemeLabel() {
+            const label = document.getElementById('current-theme');
+            const isLight = document.documentElement.classList.contains('light-mode');
+            label.textContent = isLight ? '☀️ Light Mode' : '🌙 Dark Mode';
+        }
+        
+        // Update on toggle
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.theme-toggle')) {
+                setTimeout(updateThemeLabel, 100);
+            }
+        });
+        
+        // Initial update
+        updateThemeLabel();
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

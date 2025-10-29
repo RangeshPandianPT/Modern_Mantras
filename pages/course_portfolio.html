@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Portfolio - Modern Mantras IAS Academy</title>
+    <meta name="description" content="Explore comprehensive IAS coaching programs at Modern Mantras Academy. Personalized mentorship, proven strategies, and flexible options for serious aspirants and working professionals.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/theme-system.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-background text-text-primary font-body">
+    <!-- Sticky Header Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-secondary/20 transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex-shrink-0">
+                        <img src="../assets/images/profile.jpg" 
+                             alt="Modern Mantras Logo" 
+                             class="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-cover border-2 border-secondary/30"
+                             onerror="this.outerHTML='<svg class=\'h-10 w-10 lg:h-12 lg:w-12\' viewBox=\'0 0 48 48\' fill=\'none\'><circle cx=\'24\' cy=\'24\' r=\'20\' fill=\'#d4af37\' opacity=\'0.1\'/><path d=\'M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z\' fill=\'#d4af37\'/><circle cx=\'24\' cy=\'24\' r=\'2\' fill=\'#d4af37\'/></svg>';">
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-display text-xl lg:text-2xl font-bold text-text-primary">
+                            Modern <span class="text-accent">Mantras</span>
+                        </h1>
+                        <p class="text-xs lg:text-sm text-text-secondary font-medium">IAS Academy</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <!-- Theme Toggle Button (Desktop) -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                        <div class="theme-toggle-slider">
+                            <svg class="theme-icon" id="moon-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg class="theme-icon hidden" id="sun-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                    <a href="hero_landing_zone.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="why_modern_mantras.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Why Us
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <!-- 'Our Toppers' removed from navigation -->
+                    <a href="course_portfolio.html" class="nav-link text-accent font-medium relative group">
+                        Courses
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                    </a>
+                    <a href="testimonials.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Testimonials
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                        Enroll Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center space-x-3">
+                    <!-- Theme Toggle Button (Mobile) -->
+                    <button id="theme-toggle-mobile" class="theme-toggle scale-90" aria-label="Toggle dark/light mode">
+                        <div class="theme-toggle-slider">
+                            <svg class="theme-icon" id="moon-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg class="theme-icon hidden" id="sun-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                    <button id="mobile-menu-button" class="text-text-primary hover:text-accent focus:outline-none focus:text-accent transition-colors duration-300" aria-label="Toggle mobile menu">
+                        <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-secondary/95 backdrop-blur-sm rounded-lg mt-2 border border-surface/20">
+                    <a href="hero_landing_zone.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                            </svg>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="why_modern_mantras.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Why Modern Mantras</span>
+                        </div>
+                    </a>
+                    <!-- 'Our Toppers' removed from mobile menu -->
+                    <a href="course_portfolio.html" class="block px-3 py-3 text-accent bg-surface/50 rounded-md font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            <span>Courses</span>
+                        </div>
+                    </a>
+                    <a href="testimonials.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            <span>Testimonials</span>
+                        </div>
+                    </a>
+                    <div class="px-3 py-3">
+                        <a href="contact_enrollment_hub.html" class="block w-full text-center bg-accent text-primary font-semibold px-4 py-3 rounded-lg transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                            Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-20 lg:pt-24">
+        <!-- Hero Section -->
+        <section class="py-16 lg:py-20 bg-gradient-to-br from-background via-primary to-secondary relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23d4af37" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
+                        Course <span class="text-accent">Portfolio</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                        Comprehensive IAS coaching programs designed for transformation. Choose from our carefully crafted courses that combine personalized mentorship with proven strategies for UPSC success.
+                    </p>
+                    
+                    <!-- Course Statistics -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                        <div class="text-center">
+                            <div class="text-3xl lg:text-4xl font-bold text-accent mb-2">500+</div>
+                            <p class="text-text-secondary">Successful Candidates</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl lg:text-4xl font-bold text-accent mb-2">15+</div>
+                            <p class="text-text-secondary">Years of Excellence</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl lg:text-4xl font-bold text-accent mb-2">95%</div>
+                            <p class="text-text-secondary">Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Filter Section -->
+        <section class="py-12 bg-secondary/30">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+                    <div class="flex items-center space-x-4">
+                        <svg class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                        </svg>
+                        <h3 class="font-display text-xl font-semibold text-text-primary">Filter Courses</h3>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button id="filter-all" class="filter-btn active px-4 py-2 rounded-lg font-medium transition-all duration-300 bg-accent text-primary">
+                            All Courses
+                        </button>
+                        <button id="filter-foundation" class="filter-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 bg-surface text-text-primary hover:bg-accent hover:text-primary">
+                            Foundation
+                        </button>
+                        <button id="filter-mains" class="filter-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 bg-surface text-text-primary hover:bg-accent hover:text-primary">
+                            Mains
+                        </button>
+                        <button id="filter-interview" class="filter-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 bg-surface text-text-primary hover:bg-accent hover:text-primary">
+                            Interview
+                        </button>
+                        <button id="reset-filter" class="px-4 py-2 rounded-lg font-medium transition-all duration-300 border border-accent text-accent hover:bg-accent hover:text-primary">
+                            <svg class="h-4 w-4 inline mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Grid Section -->
+        <section class="py-16 lg:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="courses-grid">
+                    
+                    <!-- Foundation Course -->
+                    <div class="course-card foundation card card-hover bg-surface/50 backdrop-blur-sm border border-secondary/20 overflow-hidden">
+                        <div class="relative">
+                            <img src="../assets/images/profile.jpg" 
+                                 alt="Foundation course classroom with students studying UPSC preparation materials and books" 
+                                 class="w-full h-48 object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">Foundation</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Limited Seats</span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-bold text-text-primary">Foundation Course</h3>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-accent">₹1,50,000</div>
+                                    <div class="text-sm text-text-secondary line-through">₹2,00,000</div>
+                                </div>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4 leading-relaxed">
+                                Comprehensive 18-month program for beginners. Build strong fundamentals with personalized mentorship and structured learning approach.
+                            </p>
+                            
+                            <div class="flex items-center space-x-6 mb-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>18 Months</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                    <span>Max 30 Students</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>All Subjects</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button class="expand-btn text-accent hover:text-accent-600 font-medium transition-colors duration-300 flex items-center space-x-2">
+                                    <span>View Details</span>
+                                    <svg class="h-4 w-4 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                                    Enroll Now
+                                </a>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="course-details hidden mt-6 pt-6 border-t border-secondary/20">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">Course Features</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Comprehensive NCERT Coverage</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Weekly Mock Tests</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Personal Mentor Assignment</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Study Material & Notes</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">What's Included</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Daily Classes (3 hours)</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Current Affairs Updates</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Doubt Clearing Sessions</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Progress Tracking</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mt-6 flex items-center space-x-4">
+                                    <a href="javascript:void(0)" class="text-accent hover:text-accent-600 font-medium transition-colors duration-300">
+                                        Download Brochure
+                                    </a>
+                                    <span class="text-text-secondary">|</span>
+                                    <span class="text-warning font-medium">Enrollment closes: 31st October 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mains Intensive Course -->
+                    <div class="course-card mains card card-hover bg-surface/50 backdrop-blur-sm border border-secondary/20 overflow-hidden">
+                        <div class="relative">
+                            <img src="../assets/images/profile.jpg" 
+                                 alt="Mains intensive course with students practicing answer writing and essay preparation" 
+                                 class="w-full h-48 object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">Mains</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-warning text-white px-3 py-1 rounded-full text-sm font-semibold">Popular</span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-bold text-text-primary">Mains Intensive</h3>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-accent">₹1,25,000</div>
+                                    <div class="text-sm text-text-secondary line-through">₹1,75,000</div>
+                                </div>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4 leading-relaxed">
+                                Specialized 12-month program focusing on Mains preparation with intensive answer writing practice and personalized feedback.
+                            </p>
+                            
+                            <div class="flex items-center space-x-6 mb-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>12 Months</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                    <span>Max 25 Students</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                                    </svg>
+                                    <span>Answer Writing</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button class="expand-btn text-accent hover:text-accent-600 font-medium transition-colors duration-300 flex items-center space-x-2">
+                                    <span>View Details</span>
+                                    <svg class="h-4 w-4 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                                    Enroll Now
+                                </a>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="course-details hidden mt-6 pt-6 border-t border-secondary/20">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">Course Features</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Daily Answer Writing Practice</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Personalized Feedback</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Essay Writing Mastery</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Case Study Analysis</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">What's Included</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>4 Hours Daily Classes</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Weekly Test Series</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Individual Counseling</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Revision Modules</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mt-6 flex items-center space-x-4">
+                                    <a href="javascript:void(0)" class="text-accent hover:text-accent-600 font-medium transition-colors duration-300">
+                                        Download Brochure
+                                    </a>
+                                    <span class="text-text-secondary">|</span>
+                                    <span class="text-warning font-medium">Enrollment closes: 15th November 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interview Mastery Course -->
+                    <div class="course-card interview card card-hover bg-surface/50 backdrop-blur-sm border border-secondary/20 overflow-hidden">
+                        <div class="relative">
+                            <img src="../assets/images/profile.jpg" 
+                                 alt="Interview mastery course with mock interview sessions and personality development training" 
+                                 class="w-full h-48 object-cover">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">Interview</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Exclusive</span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-bold text-text-primary">Interview Mastery</h3>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-accent">₹75,000</div>
+                                    <div class="text-sm text-text-secondary line-through">₹1,00,000</div>
+                                </div>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4 leading-relaxed">
+                                Exclusive 3-month program for personality development and interview preparation with retired IAS officers as mentors.
+                            </p>
+                            
+                            <div class="flex items-center space-x-6 mb-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>3 Months</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                    <span>Max 15 Students</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                    </svg>
+                                    <span>Mock Interviews</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button class="expand-btn text-accent hover:text-accent-600 font-medium transition-colors duration-300 flex items-center space-x-2">
+                                    <span>View Details</span>
+                                    <svg class="h-4 w-4 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                                    Enroll Now
+                                </a>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="course-details hidden mt-6 pt-6 border-t border-secondary/20">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">Course Features</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Daily Mock Interviews</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Personality Development</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Communication Skills</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Body Language Training</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">What's Included</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>2 Hours Daily Sessions</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Video Analysis</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Individual Feedback</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Final Assessment</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mt-6 flex items-center space-x-4">
+                                    <a href="javascript:void(0)" class="text-accent hover:text-accent-600 font-medium transition-colors duration-300">
+                                        Download Brochure
+                                    </a>
+                                    <span class="text-text-secondary">|</span>
+                                    <span class="text-warning font-medium">Enrollment closes: 20th December 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Working Professional Course -->
+                    <div class="course-card foundation card card-hover bg-surface/50 backdrop-blur-sm border border-secondary/20 overflow-hidden">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1522959546327-53a5362c5f61" 
+                                 alt="Working professional course with flexible evening classes and weekend sessions for employed candidates" 
+                                 class="w-full h-48 object-cover"
+                                 onerror="this.src='https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-accent text-primary px-3 py-1 rounded-full text-sm font-semibold">Foundation</span>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-semibold">Flexible</span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-display text-2xl font-bold text-text-primary">Working Professional</h3>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-accent">₹1,75,000</div>
+                                    <div class="text-sm text-text-secondary line-through">₹2,25,000</div>
+                                </div>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4 leading-relaxed">
+                                Flexible 24-month program designed for working professionals with weekend classes and online support for comprehensive preparation.
+                            </p>
+                            
+                            <div class="flex items-center space-x-6 mb-6 text-sm text-text-secondary">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>24 Months</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                    <span>Max 20 Students</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    <span>Online Support</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button class="expand-btn text-accent hover:text-accent-600 font-medium transition-colors duration-300 flex items-center space-x-2">
+                                    <span>View Details</span>
+                                    <svg class="h-4 w-4 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                                    Enroll Now
+                                </a>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="course-details hidden mt-6 pt-6 border-t border-secondary/20">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">Course Features</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Weekend Classes</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Evening Sessions</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Online Resources</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Recorded Lectures</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-display text-lg font-semibold mb-3 text-text-primary">What's Included</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Flexible Timings</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Digital Study Material</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Monthly Assessments</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <svg class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                                <span>Career Guidance</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mt-6 flex items-center space-x-4">
+                                    <a href="javascript:void(0)" class="text-accent hover:text-accent-600 font-medium transition-colors duration-300">
+                                        Download Brochure
+                                    </a>
+                                    <span class="text-text-secondary">|</span>
+                                    <span class="text-warning font-medium">Enrollment closes: 30th November 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Comparison Section -->
+        <section class="py-16 lg:py-20 bg-secondary/30">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl lg:text-4xl font-bold mb-6 text-text-primary">
+                        Compare <span class="text-accent">Courses</span>
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Choose the perfect program that aligns with your preparation stage and career goals.
+                    </p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-surface rounded-lg overflow-hidden">
+                        <thead class="bg-primary">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-display text-lg font-semibold text-text-primary">Features</th>
+                                <th class="px-6 py-4 text-center font-display text-lg font-semibold text-text-primary">Foundation</th>
+                                <th class="px-6 py-4 text-center font-display text-lg font-semibold text-text-primary">Mains</th>
+                                <th class="px-6 py-4 text-center font-display text-lg font-semibold text-text-primary">Interview</th>
+                                <th class="px-6 py-4 text-center font-display text-lg font-semibold text-text-primary">Professional</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-secondary/20">
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-text-primary">Duration</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">18 Months</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">12 Months</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">3 Months</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">24 Months</td>
+                            </tr>
+                            <tr class="bg-secondary/10">
+                                <td class="px-6 py-4 font-medium text-text-primary">Batch Size</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">30 Students</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">25 Students</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">15 Students</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">20 Students</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-text-primary">Personal Mentor</td>
+                                <td class="px-6 py-4 text-center">
+                                    <svg class="h-5 w-5 text-accent mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <svg class="h-5 w-5 text-accent mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <svg class="h-5 w-5 text-accent mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <svg class="h-5 w-5 text-accent mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="bg-secondary/10">
+                                <td class="px-6 py-4 font-medium text-text-primary">Mock Tests</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">Weekly</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">Weekly</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">Daily</td>
+                                <td class="px-6 py-4 text-center text-text-secondary">Monthly</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium text-text-primary">Price</td>
+                                <td class="px-6 py-4 text-center font-semibold text-accent">₹1,50,000</td>
+                                <td class="px-6 py-4 text-center font-semibold text-accent">₹1,25,000</td>
+                                <td class="px-6 py-4 text-center font-semibold text-accent">₹75,000</td>
+                                <td class="px-6 py-4 text-center font-semibold text-accent">₹1,75,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-16 lg:py-20 bg-gradient-to-r from-accent/10 to-accent/5">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-display text-3xl lg:text-4xl font-bold mb-6 text-text-primary">
+                    Ready to Begin Your <span class="text-accent">IAS Journey?</span>
+                </h2>
+                <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                    Join thousands of successful candidates who chose Modern Mantras for their UPSC preparation. Limited seats available for 2025 batch.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="contact_enrollment_hub.html" class="btn-primary text-lg px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                        Enroll Now
+                    </a>
+                    <a href="javascript:void(0)" class="btn-secondary text-lg px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                        Download Brochure
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center justify-center space-x-8 text-sm text-text-secondary">
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Free Counseling</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Flexible Payment</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Money Back Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary border-t border-secondary/20 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="../assets/images/profile.jpg" 
+                             alt="Modern Mantras Logo" 
+                             class="h-10 w-10 rounded-full object-cover border-2 border-secondary/30"
+                             onerror="this.outerHTML='<svg class=\'h-10 w-10\' viewBox=\'0 0 48 48\' fill=\'none\'><circle cx=\'24\' cy=\'24\' r=\'20\' fill=\'#d4af37\' opacity=\'0.1\'/><path d=\'M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z\' fill=\'#d4af37\'/><circle cx=\'24\' cy=\'24\' r=\'2\' fill=\'#d4af37\'/></svg>';">
+                        <div>
+                            <h3 class="font-display text-xl font-bold text-text-primary">
+                                Modern <span class="text-accent">Mantras</span>
+                            </h3>
+                            <p class="text-sm text-text-secondary">IAS Academy</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Crafting tomorrow's leaders through personalized mentorship and proven strategies. Your transformation partner in the journey to civil service excellence.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-display text-lg font-semibold mb-4 text-text-primary">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="hero_landing_zone.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="why_modern_mantras.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Why Us</a></li>
+                        <li><a href="course_portfolio.html" class="text-accent">Courses</a></li>
+                        <li><a href="testimonials.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display text-lg font-semibold mb-4 text-text-primary">Contact Info</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li>📍 123 Education Hub, New Delhi</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>✉️ info@modernmantras.com</li>
+                        <li>🌐 www.modernmantras.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary/20 mt-8 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 Modern Mantras IAS Academy. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Course Functionality -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuButton.addEventListener('click', function() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('animate-fade-in');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('animate-fade-in');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // Course expansion functionality
+        const expandButtons = document.querySelectorAll('.expand-btn');
+        expandButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const courseCard = this.closest('.course-card');
+                const courseDetails = courseCard.querySelector('.course-details');
+                const arrow = this.querySelector('svg');
+                
+                if (courseDetails.classList.contains('hidden')) {
+                    courseDetails.classList.remove('hidden');
+                    courseDetails.classList.add('animate-slide-up');
+                    arrow.style.transform = 'rotate(180deg)';
+                    this.querySelector('span').textContent = 'Hide Details';
+                } else {
+                    courseDetails.classList.add('hidden');
+                    courseDetails.classList.remove('animate-slide-up');
+                    arrow.style.transform = 'rotate(0deg)';
+                    this.querySelector('span').textContent = 'View Details';
+                }
+            });
+        });
+
+        // Course filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const courseCards = document.querySelectorAll('.course-card');
+        const resetButton = document.getElementById('reset-filter');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-accent', 'text-primary');
+                    btn.classList.add('bg-surface', 'text-text-primary');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active', 'bg-accent', 'text-primary');
+                this.classList.remove('bg-surface', 'text-text-primary');
+                
+                const filter = this.id.replace('filter-', '');
+                
+                courseCards.forEach(card => {
+                    if (filter === 'all' || card.classList.contains(filter)) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Reset filter functionality
+        resetButton.addEventListener('click', function() {
+            // Reset all filter buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-accent', 'text-primary');
+                btn.classList.add('bg-surface', 'text-text-primary');
+            });
+            
+            // Activate "All Courses" button
+            const allButton = document.getElementById('filter-all');
+            allButton.classList.add('active', 'bg-accent', 'text-primary');
+            allButton.classList.remove('bg-surface', 'text-text-primary');
+            
+            // Show all course cards
+            courseCards.forEach(card => {
+                card.style.display = 'block';
+                card.classList.add('animate-fade-in');
+            });
+        });
+
+        // Header background opacity on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            const scrolled = window.pageYOffset;
+            
+            if (scrolled > 50) {
+                header.classList.add('bg-primary/98');
+                header.classList.remove('bg-primary/95');
+            } else {
+                header.classList.add('bg-primary/95');
+                header.classList.remove('bg-primary/98');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.getElementById('main-header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe course cards for animation
+        courseCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script src="../js/theme-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a202c; /* gray-800 - Sophisticated foundation for focused reading */
+  --color-secondary: #2d3748; /* gray-700 - Subtle content separation and depth */
+  --color-accent: #d4af37; /* gold - Achievement highlights and primary actions */
+  
+  /* Background Colors */
+  --color-background: #0f1419; /* gray-900 - Deep canvas for premium positioning */
+  --color-surface: #374151; /* gray-600 - Card backgrounds and content containers */
+  
+  /* Text Colors */
+  --color-text-primary: #f7fafc; /* gray-50 - Clear hierarchy for extended reading */
+  --color-text-secondary: #cbd5e0; /* gray-300 - Supporting information without competing */
+  
+  /* Status Colors */
+  --color-success: #10b981; /* emerald-500 - Positive reinforcement for achievements */
+  --color-warning: #f59e0b; /* amber-500 - Urgency for enrollment deadlines */
+  --color-error: #ef4444; /* red-500 - Helpful guidance for form corrections */
+  
+  /* Additional Shades */
+  --color-primary-50: #f8fafc; /* gray-50 */
+  --color-primary-100: #f1f5f9; /* gray-100 */
+  --color-primary-200: #e2e8f0; /* gray-200 */
+  --color-primary-300: #cbd5e0; /* gray-300 */
+  --color-primary-400: #94a3b8; /* gray-400 */
+  --color-primary-500: #64748b; /* gray-500 */
+  --color-primary-600: #475569; /* gray-600 */
+  --color-primary-700: #334155; /* gray-700 */
+  --color-primary-800: #1e293b; /* gray-800 */
+  --color-primary-900: #0f172a; /* gray-900 */
+  
+  --color-accent-50: #fefce8; /* yellow-50 */
+  --color-accent-100: #fef3c7; /* yellow-100 */
+  --color-accent-200: #fde68a; /* yellow-200 */
+  --color-accent-300: #fcd34d; /* yellow-300 */
+  --color-accent-400: #fbbf24; /* yellow-400 */
+  --color-accent-500: #f59e0b; /* yellow-500 */
+  --color-accent-600: #d97706; /* yellow-600 */
+  --color-accent-700: #b45309; /* yellow-700 */
+  --color-accent-800: #92400e; /* yellow-800 */
+  --color-accent-900: #78350f; /* yellow-900 */
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-in-out hover:bg-accent-600 hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-text-primary border border-secondary font-semibold px-6 py-3 rounded-lg transition-all duration-300 ease-in-out hover:bg-secondary hover:border-primary;
+  }
+  
+  .card {
+    @apply bg-surface rounded-lg p-6 transition-all duration-300 ease-in-out;
+  }
+  
+  .card-hover {
+    @apply hover:bg-secondary hover:shadow-soft;
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 400ms ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 400ms ease-in-out;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 300ms ease-in-out;
+  }
+  
+  .transition-quick {
+    transition: all 200ms ease-in-out;
+  }
+  
+  .transition-slow {
+    transition: all 400ms ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

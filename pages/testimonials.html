@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Testimonials - Modern Mantras IAS Academy</title>
+    <meta name="description" content="Discover inspiring success stories from Modern Mantras IAS Academy students who achieved their civil service dreams through personalized mentorship and proven strategies.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/theme-system.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-background text-text-primary font-body">
+    <!-- Sticky Header Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-secondary/20 transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex-shrink-0">
+                        <img src="../assets/images/profile.jpg" 
+                             alt="Modern Mantras Logo" 
+                             class="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-cover border-2 border-secondary/30"
+                             onerror="this.outerHTML='<svg class=\'h-10 w-10 lg:h-12 lg:w-12\' viewBox=\'0 0 48 48\' fill=\'none\'><circle cx=\'24\' cy=\'24\' r=\'20\' fill=\'#d4af37\' opacity=\'0.1\'/><path d=\'M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z\' fill=\'#d4af37\'/><circle cx=\'24\' cy=\'24\' r=\'2\' fill=\'#d4af37\'/></svg>';">
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-display text-xl lg:text-2xl font-bold text-text-primary">
+                            Modern <span class="text-accent">Mantras</span>
+                        </h1>
+                        <p class="text-xs lg:text-sm text-text-secondary font-medium">IAS Academy</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <!-- Theme Toggle Button (Desktop) -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                        <div class="theme-toggle-slider">
+                            <svg class="theme-icon" id="moon-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg class="theme-icon hidden" id="sun-icon" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                    <a href="hero_landing_zone.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="why_modern_mantras.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Why Us
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <!-- 'Our Toppers' removed from navigation -->
+                    <a href="course_portfolio.html" class="nav-link text-text-primary hover:text-accent transition-colors duration-300 font-medium relative group">
+                        Courses
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="testimonials.html" class="nav-link text-accent font-medium relative group">
+                        Testimonials
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                    </a>
+                    <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                        Enroll Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center space-x-3">
+                    <!-- Theme Toggle Button (Mobile) -->
+                    <button id="theme-toggle-mobile" class="theme-toggle scale-90" aria-label="Toggle dark/light mode">
+                        <div class="theme-toggle-slider">
+                            <svg class="theme-icon" id="moon-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg class="theme-icon hidden" id="sun-icon-mobile" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                    <button id="mobile-menu-button" class="text-text-primary hover:text-accent focus:outline-none focus:text-accent transition-colors duration-300" aria-label="Toggle mobile menu">
+                        <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-secondary/95 backdrop-blur-sm rounded-lg mt-2 border border-surface/20">
+                    <a href="hero_landing_zone.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                            </svg>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="why_modern_mantras.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Why Modern Mantras</span>
+                        </div>
+                    </a>
+                    <!-- 'Our Toppers' removed from mobile menu -->
+                    <a href="course_portfolio.html" class="block px-3 py-3 text-text-primary hover:text-accent hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            <span>Courses</span>
+                        </div>
+                    </a>
+                    <a href="testimonials.html" class="block px-3 py-3 text-accent bg-surface/50 rounded-md font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            <span>Testimonials</span>
+                        </div>
+                    </a>
+                    <div class="px-3 py-3">
+                        <a href="contact_enrollment_hub.html" class="block w-full text-center bg-accent text-primary font-semibold px-4 py-3 rounded-lg transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                            Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-20 lg:pt-24">
+        <!-- Hero Section -->
+        <section class="py-16 lg:py-24 bg-gradient-to-br from-background via-primary to-secondary relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23d4af37" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
+                        Success <span class="text-accent">Stories</span>
+                        <span class="block text-2xl sm:text-3xl lg:text-4xl mt-2 text-text-secondary">That Inspire Excellence</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                        Discover how Modern Mantras transforms aspirations into achievements. These are real stories of dedication, mentorship, and success from students who trusted us with their civil service dreams.
+                    </p>
+                    
+                    <!-- Statistics -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                        <div class="text-center">
+                            <div class="text-3xl lg:text-4xl font-bold text-accent mb-2">500+</div>
+                            <div class="text-text-secondary">Success Stories</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl lg:text-4xl font-bold text-accent mb-2">95%</div>
+                            <div class="text-text-secondary">Student Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl lg:text-4xl font-bold text-accent mb-2">8+</div>
+                            <div class="text-text-secondary">Years of Excellence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Testimonials Section -->
+        <section class="py-16 lg:py-20 bg-secondary/30">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl lg:text-4xl font-bold mb-4 text-text-primary">
+                        Video <span class="text-accent">Testimonials</span>
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Hear directly from our successful students about their transformative journey with Modern Mantras
+                    </p>
+                </div>
+
+                <!-- Video Testimonials Carousel -->
+                <div class="relative max-w-6xl mx-auto">
+                    <div id="video-carousel" class="overflow-hidden rounded-2xl">
+                        <div id="video-slides" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Video Testimonial 1 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="bg-surface rounded-xl p-6 lg:p-8">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                                        <div class="relative">
+                                            <div class="aspect-video bg-primary rounded-lg overflow-hidden relative group cursor-pointer" onclick="playVideo('video1')">
+                                                <img src="https://images.unsplash.com/photo-1649135690608-e72a542146a8" 
+                                                     alt="Karthikeyan PP sharing his IAS success story and experience at Modern Mantras Academy" 
+                                                     class="w-full h-full object-cover"
+                                                     onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                                                <div class="absolute inset-0 bg-primary/50 flex items-center justify-center group-hover:bg-primary/30 transition-all duration-300">
+                                                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                                        <svg class="w-6 h-6 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                            <path d="M8 5v14l11-7z"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center lg:text-left">
+                                            <div class="flex items-center justify-center lg:justify-start mb-4">
+                                                <img src="https://images.unsplash.com/photo-1649135690608-e72a542146a8" 
+                                                     alt="Karthikeyan PP - IAS Rank 1 achiever from Modern Mantras Academy" 
+                                                     class="w-16 h-16 rounded-full object-cover mr-4"
+                                                     onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                                                <div>
+                                                    <h3 class="font-display text-xl font-semibold text-text-primary">Karthikeyan PP</h3>
+                                                    <p class="text-accent font-semibold">IAS Rank 1 - 2024</p>
+                                                </div>
+                                            </div>
+                                            <blockquote class="text-text-secondary italic mb-4">
+                                                "Modern Mantras didn't just teach me for the exam; they transformed my entire approach to learning and life. The personalized mentorship made all the difference."
+                                            </blockquote>
+                                            <div class="flex justify-center lg:justify-start">
+                                                <div class="flex text-accent">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Testimonial 2 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="bg-surface rounded-xl p-6 lg:p-8">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                                        <div class="relative">
+                                            <div class="aspect-video bg-primary rounded-lg overflow-hidden relative group cursor-pointer" onclick="playVideo('video2')">
+                                                <img src="https://images.unsplash.com/photo-1654243151028-5db2e4e95fc5" 
+                                                     alt="Priya Sharma sharing her IPS success story and experience at Modern Mantras Academy" 
+                                                     class="w-full h-full object-cover"
+                                                     onerror="this.src='https://images.pixabay.com/photos/2017/11/02/14/27/model-2911363_1280.jpg'; this.onerror=null;">
+                                                <div class="absolute inset-0 bg-primary/50 flex items-center justify-center group-hover:bg-primary/30 transition-all duration-300">
+                                                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                                        <svg class="w-6 h-6 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                            <path d="M8 5v14l11-7z"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center lg:text-left">
+                                            <div class="flex items-center justify-center lg:justify-start mb-4">
+                                                <img src="https://images.unsplash.com/photo-1654243151028-5db2e4e95fc5" 
+                                                     alt="Priya Sharma - IPS Rank 3 achiever from Modern Mantras Academy" 
+                                                     class="w-16 h-16 rounded-full object-cover mr-4"
+                                                     onerror="this.src='https://images.pixabay.com/photos/2017/11/02/14/27/model-2911363_1280.jpg'; this.onerror=null;">
+                                                <div>
+                                                    <h3 class="font-display text-xl font-semibold text-text-primary">Priya Sharma</h3>
+                                                    <p class="text-accent font-semibold">IPS Rank 3 - 2024</p>
+                                                </div>
+                                            </div>
+                                            <blockquote class="text-text-secondary italic mb-4">
+                                                "The faculty here doesn't just teach; they mentor. Every doubt was addressed, every weakness was turned into strength. I couldn't have achieved this without their guidance."
+                                            </blockquote>
+                                            <div class="flex justify-center lg:justify-start">
+                                                <div class="flex text-accent">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Testimonial 3 -->
+                            <div class="w-full flex-shrink-0">
+                                <div class="bg-surface rounded-xl p-6 lg:p-8">
+                                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                                        <div class="relative">
+                                            <div class="aspect-video bg-primary rounded-lg overflow-hidden relative group cursor-pointer" onclick="playVideo('video3')">
+                                                <img src="https://images.unsplash.com/photo-1649135690608-e72a542146a8" 
+                                                     alt="Amit Patel sharing his IFS success story and experience at Modern Mantras Academy" 
+                                                     class="w-full h-full object-cover"
+                                                     onerror="this.src='https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                                                <div class="absolute inset-0 bg-primary/50 flex items-center justify-center group-hover:bg-primary/30 transition-all duration-300">
+                                                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                                        <svg class="w-6 h-6 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                            <path d="M8 5v14l11-7z"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center lg:text-left">
+                                            <div class="flex items-center justify-center lg:justify-start mb-4">
+                                                <img src="https://images.unsplash.com/photo-1720964880193-66d0ac29fcc8" 
+                                                     alt="Amit Patel - IFS Rank 5 achiever from Modern Mantras Academy" 
+                                                     class="w-16 h-16 rounded-full object-cover mr-4"
+                                                     onerror="this.src='https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                                                <div>
+                                                    <h3 class="font-display text-xl font-semibold text-text-primary">Amit Patel</h3>
+                                                    <p class="text-accent font-semibold">IFS Rank 5 - 2024</p>
+                                                </div>
+                                            </div>
+                                            <blockquote class="text-text-secondary italic mb-4">
+                                                "Modern Mantras gave me the confidence to dream big and the tools to achieve those dreams. The personalized study plan was exactly what I needed."
+                                            </blockquote>
+                                            <div class="flex justify-center lg:justify-start">
+                                                <div class="flex text-accent">
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button id="prev-video" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-accent/20 hover:bg-accent/40 text-accent p-3 rounded-full transition-all duration-300 backdrop-blur-sm">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <button id="next-video" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-accent/20 hover:bg-accent/40 text-accent p-3 rounded-full transition-all duration-300 backdrop-blur-sm">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+
+                    <!-- Carousel Indicators -->
+                    <div class="flex justify-center mt-6 space-x-2">
+                        <button class="video-indicator w-3 h-3 rounded-full bg-accent transition-all duration-300" data-slide="0"></button>
+                        <button class="video-indicator w-3 h-3 rounded-full bg-text-secondary/30 hover:bg-accent/50 transition-all duration-300" data-slide="1"></button>
+                        <button class="video-indicator w-3 h-3 rounded-full bg-text-secondary/30 hover:bg-accent/50 transition-all duration-300" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Written Testimonials Section -->
+        <section class="py-16 lg:py-20 bg-background">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl lg:text-4xl font-bold mb-4 text-text-primary">
+                        Written <span class="text-accent">Reviews</span>
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Detailed experiences and insights from our successful students
+                    </p>
+                </div>
+
+                <!-- Filter Options -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-btn active bg-accent text-primary px-6 py-2 rounded-full font-semibold transition-all duration-300" data-filter="all">
+                        All Reviews
+                    </button>
+                    <button class="filter-btn bg-surface text-text-primary hover:bg-accent hover:text-primary px-6 py-2 rounded-full font-semibold transition-all duration-300" data-filter="ias">
+                        IAS Success
+                    </button>
+                    <button class="filter-btn bg-surface text-text-primary hover:bg-accent hover:text-primary px-6 py-2 rounded-full font-semibold transition-all duration-300" data-filter="ips">
+                        IPS Success
+                    </button>
+                    <button class="filter-btn bg-surface text-text-primary hover:bg-accent hover:text-primary px-6 py-2 rounded-full font-semibold transition-all duration-300" data-filter="ifs">
+                        IFS Success
+                    </button>
+                </div>
+
+                <!-- Written Testimonials Grid -->
+                <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card card card-hover border border-secondary/20" data-category="ias">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1614105986004-7b925b463d84" 
+                                 alt="Ananya Singh - IAS Rank 7 achiever from Modern Mantras Academy" 
+                                 class="w-12 h-12 rounded-full object-cover mr-3"
+                                 onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-semibold text-text-primary">Ananya Singh</h3>
+                                <p class="text-accent text-sm font-semibold">IAS Rank 7 - 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <div class="flex text-accent">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary leading-relaxed">
+                            "Modern Mantras transformed my preparation strategy completely. The personalized attention and regular mock tests helped me identify my weaknesses and work on them systematically. The faculty's experience in civil services made all the difference in my interview preparation."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-secondary/20">
+                            <p class="text-sm text-text-secondary">
+                                <span class="text-accent font-semibold">Improvement:</span> From 450 to 7th rank in 18 months
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card card card-hover border border-secondary/20" data-category="ips">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1687187616853-aa54a4ac8c32" 
+                                 alt="Vikram Reddy - IPS Rank 12 achiever from Modern Mantras Academy" 
+                                 class="w-12 h-12 rounded-full object-cover mr-3"
+                                 onerror="this.src='https://images.pixabay.com/photos/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-semibold text-text-primary">Vikram Reddy</h3>
+                                <p class="text-accent text-sm font-semibold">IPS Rank 12 - 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <div class="flex text-accent">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary leading-relaxed">
+                            "The comprehensive approach at Modern Mantras covers not just academics but also personality development. The mock interviews and current affairs sessions were particularly helpful for my IPS preparation. The mentors truly care about each student's success."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-secondary/20">
+                            <p class="text-sm text-text-secondary">
+                                <span class="text-accent font-semibold">Journey:</span> Working professional to IPS officer in 2 years
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card card card-hover border border-secondary/20" data-category="ifs">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1649135690608-e72a542146a8" 
+                                 alt="Meera Joshi - IFS Rank 8 achiever from Modern Mantras Academy" 
+                                 class="w-12 h-12 rounded-full object-cover mr-3"
+                                 onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-semibold text-text-primary">Meera Joshi</h3>
+                                <p class="text-accent text-sm font-semibold">IFS Rank 8 - 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <div class="flex text-accent">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary leading-relaxed">
+                            "The international relations focus at Modern Mantras was perfect for my IFS preparation. The faculty's expertise in foreign policy and current global affairs gave me the edge I needed. The study material was comprehensive and up-to-date."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-secondary/20">
+                            <p class="text-sm text-text-secondary">
+                                <span class="text-accent font-semibold">Background:</span> Economics graduate to IFS diplomat
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card card card-hover border border-secondary/20" data-category="ias">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1649135690608-e72a542146a8" 
+                                 alt="Arjun Mehta - IAS Rank 15 achiever from Modern Mantras Academy" 
+                                 class="w-12 h-12 rounded-full object-cover mr-3"
+                                 onerror="this.src='https://images.pixabay.com/photos/2016/11/29/09/38/adult-1868750_1280.jpg'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-semibold text-text-primary">Arjun Mehta</h3>
+                                <p class="text-accent text-sm font-semibold">IAS Rank 15 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <div class="flex text-accent">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary leading-relaxed">
+                            "After failing twice, Modern Mantras gave me the structured approach I needed. The answer writing practice and regular feedback helped me improve significantly. The supportive environment kept me motivated throughout my journey."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-secondary/20">
+                            <p class="text-sm text-text-secondary">
+                                <span class="text-accent font-semibold">Achievement:</span> Third attempt success with top 20 rank
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card card card-hover border border-secondary/20" data-category="ips">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1575352249034-b0148257f99a" 
+                                 alt="Kavya Nair - IPS Rank 18 achiever from Modern Mantras Academy" 
+                                 class="w-12 h-12 rounded-full object-cover mr-3"
+                                 onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-semibold text-text-primary">Kavya Nair</h3>
+                                <p class="text-accent text-sm font-semibold">IPS Rank 18 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <div class="flex text-accent">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary leading-relaxed">
+                            "The physical training guidance along with academic preparation made Modern Mantras unique for IPS aspirants. The holistic approach to personality development and leadership skills was exceptional. Highly recommend for police service preparation."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-secondary/20">
+                            <p class="text-sm text-text-secondary">
+                                <span class="text-accent font-semibold">Special:</span> First female IPS from her district
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card card card-hover border border-secondary/20" data-category="ifs">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1649135690608-e72a542146a8" 
+                                 alt="Rohit Gupta - IFS Rank 22 achiever from Modern Mantras Academy" 
+                                 class="w-12 h-12 rounded-full object-cover mr-3"
+                                 onerror="this.src='https://images.pixabay.com/photos/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-semibold text-text-primary">Rohit Gupta</h3>
+                                <p class="text-accent text-sm font-semibold">IFS Rank 22 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-3">
+                            <div class="flex text-accent">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary leading-relaxed">
+                            "The language training and cultural awareness programs at Modern Mantras were invaluable for IFS preparation. The faculty's diplomatic experience provided insights that no textbook could offer. Grateful for the comprehensive preparation."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-secondary/20">
+                            <p class="text-sm text-text-secondary">
+                                <span class="text-accent font-semibold">Posted:</span> Currently serving in Embassy of India, Tokyo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button class="btn-secondary hover:bg-accent hover:text-primary hover:border-accent">
+                        Load More Testimonials
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-16 lg:py-20 bg-gradient-to-r from-accent/10 to-accent/5 border-t border-accent/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="font-display text-3xl lg:text-4xl font-bold mb-6 text-text-primary">
+                        Ready to Write Your <span class="text-accent">Success Story?</span>
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        Join hundreds of successful civil servants who transformed their dreams into reality with Modern Mantras. Your journey to excellence starts with a single step.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact_enrollment_hub.html" class="btn-primary text-lg px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
+                            Start Your Journey
+                        </a>
+                        <a href="course_portfolio.html" class="btn-secondary text-lg px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-accent hover:text-primary hover:border-accent">
+                            Explore Courses
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary border-t border-secondary/20 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="../assets/images/profile.jpg" 
+                             alt="Modern Mantras Logo" 
+                             class="h-10 w-10 rounded-full object-cover border-2 border-secondary/30"
+                             onerror="this.outerHTML='<svg class=\'h-10 w-10\' viewBox=\'0 0 48 48\' fill=\'none\'><circle cx=\'24\' cy=\'24\' r=\'20\' fill=\'#d4af37\' opacity=\'0.1\'/><path d=\'M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z\' fill=\'#d4af37\'/><circle cx=\'24\' cy=\'24\' r=\'2\' fill=\'#d4af37\'/></svg>';">
+                        <div>
+                            <h3 class="font-display text-xl font-bold text-text-primary">
+                                Modern <span class="text-accent">Mantras</span>
+                            </h3>
+                            <p class="text-sm text-text-secondary">IAS Academy</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary leading-relaxed mb-4">
+                        Crafting tomorrow's leaders through personalized mentorship and proven success strategies. Where ancient wisdom meets contemporary methodology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-display text-lg font-semibold text-text-primary mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="hero_landing_zone.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Home</a></li>
+                        <li><a href="why_modern_mantras.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Why Modern Mantras</a></li>
+                        <li><a href="course_portfolio.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Courses</a></li>
+                        <li><a href="testimonials.html" class="text-accent">Testimonials</a></li>
+                        <li><a href="contact_enrollment_hub.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-display text-lg font-semibold text-text-primary mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            New Delhi, India
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +91 98765 43210
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            info@modernmantras.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary/20 mt-8 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 Modern Mantras IAS Academy. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Functionality -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuButton.addEventListener('click', function() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('animate-fade-in');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('animate-fade-in');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // Video Carousel Functionality
+        let currentVideoSlide = 0;
+        const videoSlides = document.getElementById('video-slides');
+        const totalVideoSlides = 3;
+        const videoIndicators = document.querySelectorAll('.video-indicator');
+
+        function updateVideoCarousel() {
+            const translateX = -currentVideoSlide * 100;
+            videoSlides.style.transform = `translateX(${translateX}%)`;
+            
+            // Update indicators
+            videoIndicators.forEach((indicator, index) => {
+                if (index === currentVideoSlide) {
+                    indicator.classList.remove('bg-text-secondary/30');
+                    indicator.classList.add('bg-accent');
+                } else {
+                    indicator.classList.remove('bg-accent');
+                    indicator.classList.add('bg-text-secondary/30');
+                }
+            });
+        }
+
+        // Previous video button
+        document.getElementById('prev-video').addEventListener('click', function() {
+            currentVideoSlide = currentVideoSlide === 0 ? totalVideoSlides - 1 : currentVideoSlide - 1;
+            updateVideoCarousel();
+        });
+
+        // Next video button
+        document.getElementById('next-video').addEventListener('click', function() {
+            currentVideoSlide = currentVideoSlide === totalVideoSlides - 1 ? 0 : currentVideoSlide + 1;
+            updateVideoCarousel();
+        });
+
+        // Video indicator clicks
+        videoIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function() {
+                currentVideoSlide = index;
+                updateVideoCarousel();
+            });
+        });
+
+        // Auto-play video carousel (optional)
+        setInterval(function() {
+            currentVideoSlide = currentVideoSlide === totalVideoSlides - 1 ? 0 : currentVideoSlide + 1;
+            updateVideoCarousel();
+        }, 8000);
+
+        // Video play functionality (placeholder)
+        function playVideo(videoId) {
+            alert(`Playing video: ${videoId}. In a real implementation, this would open a video player or modal.`);
+        }
+
+        // Testimonial filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-accent', 'text-primary');
+                    btn.classList.add('bg-surface', 'text-text-primary');
+                });
+                this.classList.add('active', 'bg-accent', 'text-primary');
+                this.classList.remove('bg-surface', 'text-text-primary');
+                
+                // Filter testimonials
+                testimonialCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Header background opacity on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            const scrolled = window.pageYOffset;
+            
+            if (scrolled > 50) {
+                header.classList.add('bg-primary/98');
+                header.classList.remove('bg-primary/95');
+            } else {
+                header.classList.add('bg-primary/95');
+                header.classList.remove('bg-primary/98');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.getElementById('main-header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe testimonial cards for animation
+        testimonialCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script src="../js/theme-system.js"></script>
+</body>
+</html>
