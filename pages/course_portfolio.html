@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Portfolio - Modern Mantras IAS Academy</title>
     <meta name="description" content="Explore comprehensive IAS coaching programs at Modern Mantras Academy. Personalized mentorship, proven strategies, and flexible options for serious aspirants and working professionals.">
+    <script>
+        // Apply saved theme immediately and suppress transitions to avoid flash
+        (function(){
+            try {
+                var html = document.documentElement;
+                html.classList.add('no-theme-transitions');
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark') html.classList.remove('light-mode');
+                else if (theme === 'light') html.classList.add('light-mode');
+                else {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) html.classList.remove('light-mode');
+                    else html.classList.add('light-mode');
+                }
+                window.addEventListener('DOMContentLoaded', function(){ setTimeout(function(){ html.classList.remove('no-theme-transitions'); }, 60); });
+            } catch (e) {}
+        })();
+    </script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/theme-system.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">

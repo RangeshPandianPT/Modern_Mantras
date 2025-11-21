@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Modern Mantras IAS Academy</title>
+    <meta name="description" content="Latest video lessons and playlists from Modern Mantras IAS Academy.">
+    <script>
+        // Apply saved theme immediately and suppress transitions to avoid flash
+        (function(){
+            try {
+                var html = document.documentElement;
+                html.classList.add('no-theme-transitions');
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark') html.classList.remove('light-mode');
+                else if (theme === 'light') html.classList.add('light-mode');
+                else {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) html.classList.remove('light-mode');
+                    else html.classList.add('light-mode');
+                }
+                window.addEventListener('DOMContentLoaded', function(){ setTimeout(function(){ html.classList.remove('no-theme-transitions'); }, 60); });
+            } catch (e) {}
+        })();
+    </script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-background text-text-primary font-body">
+    <!-- Simple Header (reuse or replace with your header include) -->
+    <header class="py-6 bg-primary/95 border-b border-secondary/20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="../assets/images/profile.jpg" alt="Modern Mantras" class="h-10 w-10 rounded-full object-cover">
+                    <h1 class="font-display text-xl font-bold">Modern <span class="text-accent">Mantras</span></h1>
+                </div>
+                <a href="https://www.youtube.com/@ModernMantrasEducations" target="_blank" rel="noopener" class="inline-flex items-center space-x-2 text-sm font-semibold text-red-600 hover:text-red-700">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23.498 6.186a2.994 2.994 0 00-2.108-2.116C19.63 3.5 12 3.5 12 3.5s-7.629 0-9.39.57A2.994 2.994 0 00.502 6.186 31.77 31.77 0 000 12a31.77 31.77 0 00.502 5.814 2.994 2.994 0 002.108 2.116C4.371 20.5 12 20.5 12 20.5s7.629 0 9.39-.57a2.994 2.994 0 002.108-2.116A31.77 31.77 0 0024 12a31.77 31.77 0 00-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                    <span>Subscribe</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-10 pb-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-3xl font-bold mb-6">Latest Videos</h2>
+            <p class="text-text-secondary mb-8">Embed your latest YouTube videos here. Replace the placeholder video IDs with actual IDs from your channel or populate them dynamically using the YouTube Data API.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Replace VIDEO_ID_1, VIDEO_ID_2, VIDEO_ID_3 with real YouTube video IDs -->
+                <div class="bg-surface/50 p-4 rounded-lg">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video 1" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+                    </div>
+                    <h3 class="mt-3 font-semibold">Video Title 1</h3>
+                    <p class="text-sm text-text-secondary">Short description about the video.</p>
+                </div>
+
+                <div class="bg-surface/50 p-4 rounded-lg">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video 2" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+                    </div>
+                    <h3 class="mt-3 font-semibold">Video Title 2</h3>
+                    <p class="text-sm text-text-secondary">Short description about the video.</p>
+                </div>
+
+                <div class="bg-surface/50 p-4 rounded-lg">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Video 3" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+                    </div>
+                    <h3 class="mt-3 font-semibold">Video Title 3</h3>
+                    <p class="text-sm text-text-secondary">Short description about the video.</p>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="https://www.youtube.com/@ModernMantrasEducations" target="_blank" rel="noopener" class="btn-primary px-6 py-3 rounded-lg">Visit our YouTube Channel</a>
+            </div>
+
+            <div class="mt-12 text-sm text-text-secondary">
+                <strong>Note:</strong> To populate this list automatically, use the YouTube Data API (requires API key). If you want, I can add a simple script that fetches the latest videos server-side (or client-side with an API key) and injects them into this page.
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/theme-system.js"></script>
+</body>
+</html>

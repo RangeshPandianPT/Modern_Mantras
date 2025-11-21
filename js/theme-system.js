@@ -305,4 +305,8 @@
     } catch (e) {
         console.warn('Unable to expose ThemeManager on window:', e);
     }
+    // Ensure transitions are re-enabled shortly after init to allow smooth toggles
+    setTimeout(function(){
+        try { document.documentElement.classList.remove('no-theme-transitions'); } catch (e) { /* ignore */ }
+    }, 120);
 })();

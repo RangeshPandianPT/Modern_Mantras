@@ -17,6 +17,16 @@
   --color-shadow: rgba(0, 0, 0, 0.3);
 }
 
+/* Suppress transitions while theme is applied on initial load
+   Add 'no-theme-transitions' class to <html> until theme is applied to avoid flash/mixing */
+.no-theme-transitions * {
+  transition: none !important;
+}
+.no-theme-transitions body {
+  transition: none !important;
+}
+
+
 /* Light Mode */
 :root.light-mode {
   --color-primary: #ffffff;

@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Navigation Hub - Modern Mantras IAS Academy</title>
     <meta name="description" content="Navigate seamlessly through Modern Mantras IAS Academy's comprehensive coaching programs and success stories with our intuitive header navigation system.">
+    <script>
+        // Apply saved theme immediately and suppress transitions to avoid flash
+        (function(){
+            try {
+                var html = document.documentElement;
+                html.classList.add('no-theme-transitions');
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark') html.classList.remove('light-mode');
+                else if (theme === 'light') html.classList.add('light-mode');
+                else {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) html.classList.remove('light-mode');
+                    else html.classList.add('light-mode');
+                }
+                window.addEventListener('DOMContentLoaded', function(){ setTimeout(function(){ html.classList.remove('no-theme-transitions'); }, 60); });
+            } catch (e) {}
+        })();
+    </script>
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,6 +69,12 @@
                     </a>
                     <a href="contact_enrollment_hub.html" class="btn-primary text-sm px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-accent-600 hover:shadow-lg">
                         Enroll Now
+                    </a>
+                    <a href="https://www.youtube.com/@ModernMantrasEducations" target="_blank" rel="noopener" class="inline-flex items-center space-x-2 text-sm font-semibold text-red-600 hover:text-red-700 ml-2">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M23.498 6.186a2.994 2.994 0 00-2.108-2.116C19.63 3.5 12 3.5 12 3.5s-7.629 0-9.39.57A2.994 2.994 0 00.502 6.186 31.77 31.77 0 000 12a31.77 31.77 0 00.502 5.814 2.994 2.994 0 002.108 2.116C4.371 20.5 12 20.5 12 20.5s7.629 0 9.39-.57a2.994 2.994 0 002.108-2.116A31.77 31.77 0 0024 12a31.77 31.77 0 00-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                        </svg>
+                        <span>Subscribe</span>
                     </a>
                 </div>
 
@@ -109,6 +132,14 @@
                             Enroll Now
                         </a>
                     </div>
+                    <a href="https://www.youtube.com/@ModernMantrasEducations" target="_blank" rel="noopener" class="block px-3 py-3 text-red-600 hover:text-red-700 hover:bg-surface/50 rounded-md transition-all duration-300 font-medium">
+                        <div class="flex items-center space-x-3">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M23.498 6.186a2.994 2.994 0 00-2.108-2.116C19.63 3.5 12 3.5 12 3.5s-7.629 0-9.39.57A2.994 2.994 0 00.502 6.186 31.77 31.77 0 000 12a31.77 31.77 0 00.502 5.814 2.994 2.994 0 002.108 2.116C4.371 20.5 12 20.5 12 20.5s7.629 0 9.39-.57a2.994 2.994 0 002.108-2.116A31.77 31.77 0 0024 12a31.77 31.77 0 00-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                            <span>Subscribe on YouTube</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -122,9 +153,15 @@
     <!-- Footer -->
     <footer class="bg-primary border-t border-secondary/20 py-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-text-secondary">
+            <p class="text-text-secondary mb-3">
                 © 2025 Modern Mantras IAS Academy. All Rights Reserved.
             </p>
+            <a href="https://www.youtube.com/@ModernMantrasEducations" target="_blank" rel="noopener" class="inline-flex items-center justify-center space-x-2 text-sm font-semibold text-red-600 hover:text-red-700">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M23.498 6.186a2.994 2.994 0 00-2.108-2.116C19.63 3.5 12 3.5 12 3.5s-7.629 0-9.39.57A2.994 2.994 0 00.502 6.186 31.77 31.77 0 000 12a31.77 31.77 0 00.502 5.814 2.994 2.994 0 002.108 2.116C4.371 20.5 12 20.5 12 20.5s7.629 0 9.39-.57a2.994 2.994 0 002.108-2.116A31.77 31.77 0 0024 12a31.77 31.77 0 00-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                </svg>
+                <span>Subscribe on YouTube</span>
+            </a>
         </div>
     </footer>
 
