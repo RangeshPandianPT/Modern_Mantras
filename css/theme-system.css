@@ -599,3 +599,46 @@ a:hover {
   border-top-color: #d4af37;
 }
 
+/* Compact header overrides: reduce navbar max-width, padding and button sizes */
+#main-header .container,
+#main-header nav .container {
+  max-width: 1100px;
+  padding-left: 1rem; /* keep small side padding */
+  padding-right: 1rem;
+}
+
+#main-header .site-nav {
+  min-height: 56px; /* slightly shorter header */
+}
+
+#main-header .btn-primary {
+  padding: 0.45rem 0.9rem; /* smaller button */
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+}
+
+#main-header .theme-toggle {
+  width: 52px;
+  height: 28px;
+}
+
+#main-header .theme-toggle .theme-toggle-slider,
+#main-header .theme-toggle .toggle-thumb {
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  left: 4px;
+}
+
+#main-header .nav-links > a,
+#main-header .nav-link {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+/* Slightly reduce spacing on larger screens for a tighter look */
+@media (min-width: 1024px) {
+  #main-header .container { max-width: 1200px; }
+  #main-header .nav-links > a { padding-left: 0.7rem; padding-right: 0.7rem; }
+}
+
