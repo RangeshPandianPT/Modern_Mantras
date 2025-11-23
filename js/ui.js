@@ -31,6 +31,11 @@
         var y = window.scrollY || document.documentElement.scrollTop;
         if (y > 60) header.classList.add('sticky');
         else header.classList.remove('sticky');
+
+        // Add a compact/shrink state when scrolled further
+        if (y > 140) header.classList.add('shrink');
+        else header.classList.remove('shrink');
+
         lastScroll = y;
       }, {passive: true});
     }
@@ -49,5 +54,50 @@
         }
       });
     });
+
+    // Modal open/close handlers
+    function openModal(modalId){
+      var modal = document.getElementById(modalId);
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      document.documentElement.style.overflow = 'hidden';
+    }
+
+    function closeModal(modal){
+      modal.classList.add('hidden');
+      document.documentElement.style.overflow = '';
+    }
+
+    document.querySelectorAll('[data-open-modal]').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        var id = btn.getAttribute('data-open-modal');
+        openModal(id);
+      });
+    });
+
+    // Close buttons and backdrop
+    document.querySelectorAll('.modal').forEach(function(modal){
+      modal.addEventListener('click', function(e){
+        if (e.target.classList.contains('modal') || e.target.classList.contains('modal-backdrop')){
+          closeModal(modal);
+        }
+      });
+      var close = modal.querySelector('.modal-close');
+      if (close) close.addEventListener('click', function(){ closeModal(modal); });
+    });
+
+    // Enrollment form submit (demo) - replace with real endpoint if available
+    var enrollForm = document.getElementById('enroll-form');
+    if (enrollForm){
+      enrollForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        var data = new FormData(enrollForm);
+        // For now just show a thank-you message
+        alert('Thank you! We received your inquiry. We will contact you shortly.');
+        closeModal(document.getElementById('enroll-modal'));
+        enrollForm.reset();
+      });
+    }
   });
 })();
