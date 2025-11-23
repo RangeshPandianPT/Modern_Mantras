@@ -55,24 +55,34 @@
       });
     });
 
-    // Modal open/close handlers
-    function openModal(modalId){
+    // Modal open/close handlers with focus management
+    function openModal(modalId, opener){
       var modal = document.getElementById(modalId);
       if (!modal) return;
       modal.classList.remove('hidden');
       document.documentElement.style.overflow = 'hidden';
+      // store last focused element to restore focus later
+      modal._lastFocused = opener || document.activeElement;
+      // focus first input or close button
+      var first = modal.querySelector('input, button, [tabindex]:not([tabindex="-1"])');
+      if (first) first.focus();
+      modal.setAttribute('aria-hidden', 'false');
     }
 
     function closeModal(modal){
+      if (!modal) return;
       modal.classList.add('hidden');
       document.documentElement.style.overflow = '';
+      modal.setAttribute('aria-hidden', 'true');
+      // restore focus
+      try{ if (modal._lastFocused) modal._lastFocused.focus(); }catch(e){}
     }
 
     document.querySelectorAll('[data-open-modal]').forEach(function(btn){
       btn.addEventListener('click', function(e){
         e.preventDefault();
         var id = btn.getAttribute('data-open-modal');
-        openModal(id);
+        openModal(id, btn);
       });
     });
 
@@ -85,6 +95,8 @@
       });
       var close = modal.querySelector('.modal-close');
       if (close) close.addEventListener('click', function(){ closeModal(modal); });
+      // escape key to close
+      modal.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(modal); });
     });
 
     // Enrollment form submit (demo) - replace with real endpoint if available
@@ -98,6 +110,18 @@
         closeModal(document.getElementById('enroll-modal'));
         enrollForm.reset();
       });
+    }
+
+    // Register service worker for PWA (if available)
+    if ('serviceWorker' in navigator) {
+      try {
+        navigator.serviceWorker.register('/sw.js').then(function(reg){
+          // registration successful
+        }).catch(function(err){
+          // registration failed
+          console.warn('SW register failed:', err);
+        });
+      } catch (e){ console.warn('SW not available', e); }
     }
   });
 })();

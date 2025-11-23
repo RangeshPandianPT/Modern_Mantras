@@ -1,0 +1,21 @@
+{
+  "name": "Modern Mantras IAS Academy",
+  "short_name": "ModernMantras",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d4af37",
+  "description": "Expert UPSC guidance, mentorship and test series from Modern Mantras IAS Academy.",
+  "icons": [
+    {
+      "src": "/assets/images/profile.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/assets/images/profile.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

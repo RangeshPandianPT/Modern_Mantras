@@ -55,13 +55,12 @@
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-14 lg:h-16">
                 <!-- Logo Section -->
-                <div class="flex items-center space-x-3">
-                    <div class="flex-shrink-0">
-                            <img src="../assets/images/profile.jpg" 
-                                alt="Modern Mantras Logo" 
-                                class="h-8 w-8 lg:h-10 lg:w-10 rounded-full object-cover border-2 border-secondary/30"
-                             onerror="this.outerHTML='<svg class=\'h-10 w-10 lg:h-12 lg:w-12\' viewBox=\'0 0 48 48\' fill=\'none\'><circle cx=\'24\' cy=\'24\' r=\'20\' fill=\'#d4af37\' opacity=\'0.1\'/><path d=\'M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z\' fill=\'#d4af37\'/><circle cx=\'24\' cy=\'24\' r=\'2\' fill=\'#d4af37\'/></svg>';">
-                    </div>
+                                        <div class="flex items-center space-x-3">
+                                                <div class="flex-shrink-0">
+                                                    <picture>
+                                                        <source srcset="../assets/images/profile.webp" type="image/webp">
+                                                        <img src="../assets/images/profile.jpg" alt="Modern Mantras Logo" class="h-8 w-8 lg:h-10 lg:w-10 rounded-full object-cover border-2 border-secondary/30" loading="lazy" width="40" height="40" onerror="this.outerHTML='<svg class=\'h-10 w-10 lg:h-12 lg:w-12\' viewBox=\'0 0 48 48\' fill=\'none\'><circle cx=\'24\' cy=\'24\' r=\'20\' fill=\'#d4af37\' opacity=\'0.1\'/><path d=\'M24 8L28 16H36L30 22L32 30L24 26L16 30L18 22L12 16H20L24 8Z\' fill=\'#d4af37\'/><circle cx=\'24\' cy=\'24\' r=\'2\' fill=\'#d4af37\'/></svg>';"></picture>
+                                                </div>
                     <div class="hidden sm:block">
                         <h1 class="font-display text-xl lg:text-2xl font-bold text-text-primary">
                             Modern <span class="text-accent">Mantras</span>
@@ -200,15 +199,15 @@
                 <div class="max-w-6xl mx-auto">
                     <!-- Welcome Section with Logo -->
                     <div class="text-center mb-8">
-                        <!-- Large Academy Logo -->
-                        <div class="flex justify-center mb-8">
-                            <div class="relative">
-                                  <img src="../assets/images/profile.jpg" 
-                                      alt="Modern Mantras IAS Academy Logo" 
-                                      class="h-20 w-20 sm:h-28 sm:w-28 lg:h-36 lg:w-36 rounded-full object-cover border-2 border-secondary/30 shadow-2xl"
-                                     onerror="this.style.display='none';">
-                            </div>
-                        </div>
+                                                <!-- Large Academy Logo -->
+                                                <div class="flex justify-center mb-8">
+                                                        <div class="relative">
+                                                            <picture>
+                                                                <source srcset="../assets/images/profile.webp" type="image/webp">
+                                                                <img src="../assets/images/profile.jpg" alt="Modern Mantras IAS Academy Logo" class="h-20 w-20 sm:h-28 sm:w-28 lg:h-36 lg:w-36 rounded-full object-cover border-2 border-secondary/30 shadow-2xl" loading="lazy" width="144" height="144" onerror="this.style.display='none';">
+                                                            </picture>
+                                                        </div>
+                                                </div>
                         
                         <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
                             Welcome to
@@ -727,16 +726,19 @@
     </a>
 
     <!-- Enrollment Modal -->
-    <div id="enroll-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="enroll-title">
+    <div id="enroll-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="enroll-title" aria-hidden="true">
         <div class="modal-backdrop"></div>
         <div class="modal-panel">
             <button class="modal-close" aria-label="Close enrollment dialog">✕</button>
             <h3 id="enroll-title" class="font-display text-2xl font-semibold mb-4">Enroll Inquiry</h3>
             <p class="text-text-secondary mb-4">Send us your details and we'll contact you to complete enrollment.</p>
             <form id="enroll-form">
-                <label class="block mb-2"><input name="name" required placeholder="Your name" class="w-full px-3 py-2 rounded border"/></label>
-                <label class="block mb-2"><input name="phone" required placeholder="Phone (with country code)" class="w-full px-3 py-2 rounded border"/></label>
-                <label class="block mb-4"><input name="email" placeholder="Email (optional)" class="w-full px-3 py-2 rounded border"/></label>
+                <label class="block mb-2" for="enroll-name">Full name <span class="sr-only">(required)</span></label>
+                <input id="enroll-name" name="name" required placeholder="Your name" class="w-full px-3 py-2 rounded border mb-2" />
+                <label class="block mb-2" for="enroll-phone">Phone <span class="sr-only">(required)</span></label>
+                <input id="enroll-phone" name="phone" required placeholder="Phone (with country code)" class="w-full px-3 py-2 rounded border mb-2" />
+                <label class="block mb-2" for="enroll-email">Email (optional)</label>
+                <input id="enroll-email" name="email" placeholder="Email (optional)" class="w-full px-3 py-2 rounded border mb-4" />
                 <div class="text-right"><button type="submit" class="btn-primary">Send Inquiry</button></div>
             </form>
         </div>

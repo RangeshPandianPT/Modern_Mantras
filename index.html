@@ -38,11 +38,19 @@
     <link rel="stylesheet" href="css/theme-system.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/profile.jpg" type="image/jpeg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#d4af37">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Immediate redirect to home page
         window.location.replace('pages/hero_landing_zone.html');
     </script>
+        <script>
+        // register SW from index as well (safe no-op if not served from root)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(function(e){console.warn('sw register failed', e)});
+        }
+        </script>
 </head>
 <body style="display:none;">
     <!-- Redirect in progress -->
@@ -56,3 +64,4 @@
     </noscript>
 </body>
 </html>
+  
